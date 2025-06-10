@@ -1,0 +1,224 @@
+:root {
+  --card-bg: #1e293b;
+}
+
+.background {
+  background-image: url(../../assets/img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70vh;
+}
+.service-title {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 200px;
+}
+.home {
+  font-family: Arial;
+  font-weight: 10px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.home:hover {
+  opacity: 0.7;
+  color: blue;
+}
+.img {
+  border: none;
+  border-style: 1px solid black;
+  display: block;
+  margin: 40px auto 0 auto; /* Top + Centered horizontally */
+  width: 60px;
+  height: 60px;
+  border-radius: 45%;
+  padding-top: 3px;
+  transition: box-shadow 0.4s;
+}
+.img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.custom-card {
+  border-style: 1px solid;
+  border-radius: 2px;
+  height: 100%;
+  max-width: 400px;
+  margin-left: 10px;
+  transition: all 0.4s ease;
+}
+.custom-card:hover {
+  opacity: 0.9;
+  background-color: #5e87eb;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -14px;
+  cursor: pointer;
+}
+.subtitle {
+  color: grey;
+}
+.sub-background {
+  margin-top: 40px;
+  background-image: url(../../assets/img/second-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+.button-contact {
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: #5e87eb;
+}
+.button-contact:hover {
+  background-color: #5e87eb;
+  color: white;
+}
+@media (max-width: 992px) {
+  .service-title {
+    margin-top: 100px;
+    font-size: 1.8rem;
+  }
+
+  .custom-card {
+    margin: 10px auto;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    height: 50vh;
+  }
+
+  .sub-background {
+    height: 30vh;
+  }
+
+  .service-title {
+    margin-top: 80px;
+    font-size: 1.6rem;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .button-contact {
+    width: 150px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-title {
+    font-size: 1.4rem;
+    margin-top: 60px;
+  }
+
+  .custom-card {
+    padding: 15px;
+    min-height: 250px;
+  }
+
+  .img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* ============== */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.background-service {
+  background-image: url(../../assets/img/image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70vh;
+}
+.home {
+  font-family: Arial;
+  font-weight: 10px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.home:hover {
+  opacity: 0.7;
+  color: blue;
+}
+.service-detail-title {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 200px;
+}
+.service-detail-image {
+  width: 900px;
+}
+.service-detail-area {
+  margin-top: 60px;
+  padding-left: 0 15px;
+}
+.service-step-img {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-step-wrap {
+  margin-top: 30px;
+  color: gray;
+}
+
+/* Small to medium screens: tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service-detail-title {
+    font-size: 28px;
+    margin-top: 120px;
+  }
+}
+
+/* Medium to large screens: tablets and small desktops */
+@media (min-width: 922px) and (max-width: 1199.98px) {
+  .service-detail-image {
+    max-width: 800px;
+  }
+  .service-detail-title {
+    font-size: 32px;
+    margin-top: 150px;
+  }
+}
+
+/* Large screens: desktops */
+@media (min-width: 1200px) {
+  .service-detail-image {
+    max-width: 900px;
+  }
+  .service-detail-title {
+    font-size: 36px;
+    margin-top: 200px;
+  }
+  .service-detail-area,
+  .service-step-wrap {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Very small screens: phones */
+@media (max-width: 575.98px) {
+  .service-detail-title {
+    font-size: 22px;
+    margin-top: 80px;
+  }
+}
