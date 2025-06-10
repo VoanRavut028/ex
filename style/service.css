@@ -2,6 +2,32 @@
   --card-bg: #1e293b;
 }
 
+[data-bs-theme="dark"] .custom-card {
+  background-color: var(--card-bg);
+}
+[data-bs-theme="dark"] .custom-card h5,
+p {
+  color: white;
+}
+[data-bs-theme="light"] .custom-card h5,
+p {
+  color: black;
+}
+[data-bs-theme="dark"] .background {
+  background-image: url(../../assets/img/);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70vh;
+  background-color: transparent;
+}
+[data-bs-theme="dark"] .sub-background {
+  margin-top: 40px;
+  background-image: url(../../assets/img/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
 .background {
   background-image: url(../../assets/img/back.jpg);
   background-repeat: no-repeat;
@@ -78,6 +104,14 @@
   background-color: #5e87eb;
   color: white;
 }
+[data-bs-theme="dark"] .button-contact {
+  background-color: var(--card-bg);
+}
+[data-bs-theme="dark"] .button-contact:hover {
+  background-color: #5e87eb;
+  color: white;
+}
+
 @media (max-width: 992px) {
   .service-title {
     margin-top: 100px;
