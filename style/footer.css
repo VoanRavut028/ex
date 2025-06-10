@@ -1,6 +1,23 @@
 html[data-bs-theme="dark"] footer {
   background-color: #0f172a;
 }
+html[data-bs-theme="dark"] footer .icons {
+  color: white;
+}
+html[data-bs-theme="dark"] footer h4,
+.footer-logo {
+  color: white;
+}
+html[data-bs-theme="dark"] footer .footer-logo {
+  color: white;
+}
+html[data-bs-theme="light"] footer h4,
+.footer-logo {
+  color: black;
+}
+html[data-bs-theme="light"] footer .footer-logo {
+  color: black;
+}
 html[data-bs-theme="light"] footer {
   background-color: #f8f9fa;
 }

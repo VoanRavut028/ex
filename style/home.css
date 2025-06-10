@@ -1,8 +1,11 @@
 :root {
   --card-bg: #1e293b;
 }
-[data-bs-theme='dark'] p{
+[data-bs-theme='dark'] p,h1 , .company-detail{
   color: white;
+}
+[data-bs-theme='light'] h1 , .company-detail{
+  color: black;
 }
 .service-card {
   border-radius: 12px;
@@ -142,6 +145,9 @@ html[data-bs-theme="dark"] .experience-badge-plan {
 /* === Pricing=== */
 html[data-bs-theme="dark"] .pricing-plan {
   background-color: var(--card-bg);
+}
+html[data-bs-theme="dark"] .pricing-plan h2 {
+  color: white;
 }
 
 .card {
