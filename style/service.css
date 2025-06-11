@@ -14,7 +14,7 @@ p {
   color: black;
 }
 [data-bs-theme="dark"] .background {
-  background-image: url(../../assets/img/);
+  background-image: url(../../assets/img/image.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 70vh;
@@ -36,7 +36,7 @@ p {
 }
 .service-title {
   font-family: Arial;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 200px;
 }
 .home {
@@ -112,10 +112,10 @@ p {
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .service-title {
     margin-top: 100px;
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .custom-card {
@@ -135,7 +135,7 @@ p {
 
   .service-title {
     margin-top: 80px;
-    font-size: 1.6rem;
+    font-size: 12px;
   }
 
   .img {
@@ -152,7 +152,7 @@ p {
 
 @media (max-width: 576px) {
   .service-title {
-    font-size: 1.4rem;
+    font-size: 12px;
     margin-top: 60px;
   }
 
@@ -169,12 +169,8 @@ p {
 
 /* ============== */
 
-body {
-  padding: 0;
-  margin: 0;
-}
 .background-service {
-  background-image: url(../../assets/img/image.png);
+  background-image: url(../assets/img/image.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 70vh;

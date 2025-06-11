@@ -1,11 +1,17 @@
 :root {
   --card-bg: #1e293b;
 }
-[data-bs-theme='dark'] p,h1 , .company-detail{
+[data-bs-theme="dark"] p,
+h1,
+.company-detail {
   color: white;
 }
-[data-bs-theme='light'] h1 , .company-detail{
+[data-bs-theme="light"] h1,
+.company-detail {
   color: black;
+}
+[data-bs-theme="dark"] .company-detail {
+  color: white;
 }
 .service-card {
   border-radius: 12px;

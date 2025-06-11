@@ -1,0 +1,30 @@
+*:root {
+  --card-bg: #1e293b;
+}
+.contact-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+html[data-bs-theme="dark"] .contact-card,
+.contact-form {
+  background-color: var(--card-bg);
+}
+html[data-bs-theme="dark"] .contact-card ul li {
+  color: white;
+}
+html[data-bs-theme="dark"] .contact-form:focus {
+  background-color: var(--card-bg);
+}
+html[data-bs-theme="light"] .contact-form {
+  background-color: white;
+}
+html[data-bs-theme="dark"] .contact-form {
+  color: white;
+}
+html[data-bs-theme="dark"] input[type="text"]::placeholder {
+  color: white;
+}
+[data-bs-theme="light"] input[type="text"]::placeholder {
+  color: black;
+}
