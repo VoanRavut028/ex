@@ -4,7 +4,7 @@ export const client = [
                 attention to detail and commitment to excellence exceeded our
                 expectations. The project was delivered on time and within
                 budget."`,
-    img: "assets/img/client-chhat.jpg",
+    img: "../../assets/img/client-chhat.jpg",
     name: "Cher Chhat",
     position: "CEO, Tech Solutions",
   },
@@ -13,8 +13,16 @@ export const client = [
                 attention to detail and commitment to excellence exceeded our
                 expectations. The project was delivered on time and within
                 budget."`,
-    img: "assets/img/client-jit.jpg",
+    img: "../../assets/img/client-jit.jpg",
     name: "Cher Tra",
+    position: "CEO, Tech Solutions",
+  }, {
+    description: `"Working with this team has been an absolute pleasure. Their
+                attention to detail and commitment to excellence exceeded our
+                expectations. The project was delivered on time and within
+                budget."`,
+    img: "../../assets/img/client-seaklang.jpg",
+    name: "Cher Seaklang",
     position: "CEO, Tech Solutions",
   },
   {
@@ -22,7 +30,7 @@ export const client = [
                 attention to detail and commitment to excellence exceeded our
                 expectations. The project was delivered on time and within
                 budget."`,
-    img: "assets/img/client-kdey.jpg",
+    img: "../../assets/img/client-kdey.jpg",
     name: "MC Kdey",
     position: "CEO, Tech Solutions",
   },
@@ -31,7 +39,7 @@ export const client = [
                 attention to detail and commitment to excellence exceeded our
                 expectations. The project was delivered on time and within
                 budget."`,
-    img: "assets/img/client-lin.jpg",
+    img: "../../assets/img/client-lin.jpg",
     name: "Cher Lin",
     position: "CEO, Tech Solutions",
   },
@@ -40,7 +48,7 @@ export const client = [
                 attention to detail and commitment to excellence exceeded our
                 expectations. The project was delivered on time and within
                 budget."`,
-    img: "assets/img/client-sal.jpg",
+    img: "../../assets/img/client-sal.jpg",
     name: "Cher Sal",
     position: "CEO, Tech Solutions",
   },

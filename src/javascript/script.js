@@ -70,8 +70,6 @@ function slider() {
 
     // Slide change callbacks
   });
-
-
 }
 logoSlide();
 function logoSlide() {

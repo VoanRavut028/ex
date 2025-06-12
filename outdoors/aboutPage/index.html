@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="" id="htmlPage">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style/clientSlide.css" />
+      <link rel="stylesheet" href="../../style/header.css" />
+    <link rel="stylesheet" href="../../style/home.css" />
+    <link rel="stylesheet" href="../../style/general.css">
+    <link rel="stylesheet" href="../../bootstrapt/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/section-2.css">
+    <link rel="stylesheet" href="../../style/section-3.css">
+    <link rel="stylesheet" href="../../style/section-4.css">
+    <link rel="stylesheet" href="../../style/section-5.css">
+    <link rel="stylesheet" href="../../style/section-6.css">
+    <link rel="stylesheet" href="../../style/section-7.css">
+    <link rel="stylesheet" href="../../style/footer.css">
+    <link rel="stylesheet" href="../../style/service.css">
+    <link rel="stylesheet" href="../../style/header-aboout.css">
+   
+    <title>Simple A-Z</title>
+    <link rel="icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <a href="../../index.html" class="navbar-brand d-flex text-light"
+            >Trionix</a
+          >
+          <div class="d-none d-lg-flex align-items-center gap-4 list-unstyled">
+            <li>
+              <a class="text-decoration-none text-light" href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-decoration-none text-light" href="">About Us</a>
+            </li>
+            <li class="main-drop-down">
+              <a class="text-decoration-none text-light" href="#"
+                >Services <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="drop-down-service">
+                <li>
+                  <a
+                    class="text-decoration-none ps-2 text-dark"
+                    href="../servicePage/index.html"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none ps-2 text-dark"
+                      href="../servicePage/serviceDtail.html"
+                    >Service Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main-drop-down">
+              <a class="text-decoration-none text-light" href=""
+                >Pages <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="drop-down-service">
+                <li>
+                  <a class="text-decoration-none text-dark" href="">Projects</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href=""
+                    >Projects Details</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href="">Pricing</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href="">FQA</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href=""
+                    >Coming soon</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href=""
+                    >Terms & Condition</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark" href=""
+                    >privacy policy</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main-drop-down">
+              <a class="text-decoration-none text-light" href=""
+                >Blog <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="drop-down-service">
+                <li><a class="text-dark" href="">Blog grid</a></li>
+                <li><a class="text-dark" href="">Blog Details</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="text-decoration-none text-light"
+                href="./index.html"
+                >Contact</a
+              >
+            </li>
+          </div>
+          <div class="form-check form-switch d-flex align-items-center">
+            <label for="checkSwitch" class="me-2 text-light">Theme</label>
+            <input
+              class="form-check-input d-none"
+              type="checkbox"
+              id="checkSwitch" />
+            <i
+              class="text-light bi bi-moon-fill"
+              id="themeToggle"
+              role="button"
+              style="font-size: 1.5rem"></i>
+          </div>
+          <button
+            class="navbar-toggler d-flex shadow-none d-lg-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvas"
+            aria-controls="navbarOffcanvas"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars text-light"></i></span>
+          </button>
+          <div class="gap-4 d-none d-lg-flex d-xl-flex">
+            <button class="btn btn-light">Sign In</button>
+            <button class="btn btn-light">Sign Up</button>
+          </div>
+
+          <div
+            class="offcanvas w-75 offcanvas-end"
+            id="navbarOffcanvas"
+            tabindex="-1"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a id="offcanvasNavbarLabel" href="#" class="navbar-brand"
+                >Trionix</a
+              >
+              <button
+                type="button"
+                class="btn-close shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-block d-lg-none align-items-center list-unstyled">
+                <li class="py-2">
+                  <a class="text-decoration-none" href="./index.html">Home</a>
+                </li>
+                <li class="py-2">
+                  <a class="text-decoration-none" href="">About Us</a>
+                </li>
+                <li class="main-drop-down py-2">
+                  <a class="text-decoration-none" href="#"
+                    >Services <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="drop-down-service">
+                    <li>
+                      <a
+                        class="text-decoration-none ps-2"
+                        href="./outdoors/servicePage/index.html"
+                        >Service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-decoration-none ps-2"
+                        href="./outdoors/servicePage/serviceDtail.html"
+                        >Service Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-drop-down py-2">
+                  <a class="text-decoration-none" href=""
+                    >Pages <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="drop-down-service">
+                    <li>
+                      <a class="text-decoration-none" href="">Projects</a>
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href=""
+                        >Projects Details</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href="">Pricing</a>
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href="">FQA</a>
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href="">Coming soon</a>
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href=""
+                        >Terms & Condition</a
+                      >
+                    </li>
+                    <li>
+                      <a class="text-decoration-none" href="">privacy policy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-drop-down py-2">
+                  <a class="text-decoration-none text-light" href=""
+                    >Blog <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="drop-down-service">
+                    <li><a class="" href="">Blog grid</a></li>
+                    <li><a class="" href="">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="py-2">
+                  <a class="text-decoration-none" href="">Contact</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <body>
+  
+
+    <!-- section 1 -->
+    
+      <section class="header d-flex flex-column justify-content-center align-items-center pt-5">
+        <div>
+          <h1 class="about">About Us</h1>
+        </div>
+        <div>
+          <span><a class="home" href="#">Home</a></span> <span class="dot">•About Us</span> 
+        </div>
+      </section>
+    
+    <!-- section 2 -->
+    
+      <section class="section2 container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 my-auto">
+          <div>
+            <p class="section2-welcome">
+              Welcome to TrioniX
+            </p>
+          </div>
+          <div>
+            <h1 class="section2-we">
+              We've been helping businesses communicate better since 1995
+            </h1>
+          </div>
+          <div>
+            <p class="section2-lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          
+          <!-- Skills -->
+          
+            <div>
+                <div class="d-flex flex-row justify-content-between">
+                 <div><h6 class="h6-div">Web Development</h6></div>
+                 <div class="h6-div">80%</div>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+              <div><h6 class="h6-div">iOS apps</h6></div>
+              <div class="h6-div">75%</div>
+            </div>
+            <div class="progress-container">
+               <div class="progress-bar" style="width: 75%;"></div>
+             </div>
+            <div class="d-flex flex-row justify-content-between">
+              <div><h6 class="h6-div">Discovery & Strategy</h6></div>
+              <div class="h6-div">70%</div>
+            </div>
+               <div class="progress-container">
+               <div class="progress-bar" style="width: 70%;"></div>
+             </div>
+            </div>
+            <div class="image-bnd col-lg-6 col-md-6 mt-4 text-center my-auto">
+              <div class="image-people">
+                <div class="div-image">
+                  <img class="people img-fluid" src="../../assets/img/about.jpg" alt="">
+                  <div class="bnd ms-1">
+                    <h1 class="h1-12">12</h1>
+                    <h5>Years of Experience</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- section 3 -->
+    
+      <section class="section3 container-fluid mt-5 ">
+        <div class="row text-center pt-5 pb-4">
+          <div class="col-lg-3 col-md-6">
+            <h1 class="number">23+</h1>
+            <p class="text-iteam">Yours of Experience</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h1 class="number">500</h1>
+            <p class="text-iteam">Complete Projects</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h1 class="number">100+</h1>
+            <p class="text-iteam">Employees</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h1 class="number">300+</h1>
+            <p class="text-iteam">5 Star Rating</p>
+          </div>
+        </div>
+      </section>
+    
+    <!-- section 4 -->
+    <section class="container-fluid mt-4">
+              <h1 class="text-center fw-bold my-5">
+               Expert Tean Member
+              </h1>
+          <div class="row text-center">
+            <div class="container-teams  border-0  col-lg-3 col-md-6 col-12">
+              <div class="card-header border-0 ">
+               <img
+                src="../../assets/img/team-1.jpg"
+                alt="Avatar"
+                class="image-teams img-fluid "
+              />
+              </div>
+              <!-- card-head  -->
+              <div class="card-footer border-0">
+                <div class="middle-teams d-flex gap-3">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+                <div class="text-name mt-3">
+                  <h3 class="h3">Lewis Lucas</h3>
+                  <p class="text-skill">IT Manager</p>
+                </div>
+              </div>
+              <!-- card-body  -->
+            </div>
+            <div class="container-teams  border-0  col-lg-3 col-md-6 col-12">
+              <div class="card-header border-0 ">
+               <img
+                src="../../assets/img/team-2.jpg"
+                alt="Avatar"
+                class="image-teams img-fluid "
+              />
+              </div>
+              <!-- card-head  -->
+              <div class="card-footer border-0">
+                <div class="middle-teams d-flex gap-3">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+                <div class="text-name mt-3">
+                  <h3 class="h3">Arturo Fuller</h3>
+                  <p class="text-skill">Service Manager</p>
+                </div>
+              </div>
+              <!-- card-body  -->
+            </div>
+            <div class="container-teams  border-0  col-lg-3 col-md-6 col-12">
+              <div class="card-header border-0 ">
+               <img
+                src="../../assets/img/team-3.jpg"
+                alt="Avatar"
+                class="image-teams img-fluid "
+              />
+              </div>
+              <!-- card-head  -->
+              <div class="card-footer border-0">
+                <div class="middle-teams d-flex gap-3">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+                <div class="text-name mt-3">
+                  <h3 class="h3">Velma Cain</h3>
+                  <p class="text-skill">Managing Director</p>
+                </div>
+              </div>
+              <!-- card-body  -->
+            </div>
+            <div class="container-teams  border-0  col-lg-3 col-md-6 col-12">
+              <div class="card-header border-0 ">
+               <img
+                src="../../assets/img/team-4.jpg"
+                alt="Avatar"
+                class="image-teams img-fluid "
+              />
+              </div>
+              <!-- card-head  -->
+              <div class="card-footer border-0">
+                <div class="middle-teams d-flex gap-3">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+                <div class="text-name mt-3">
+                  <h3 class="h3">Marc Gibbs</h3>
+                  <p class="text-skill">Executive Assistant</p>
+                </div>
+              </div>
+              <!-- card-body  -->
+            </div>
+          </div>
+        </section>
+    
+      <!-- section5 -->
+      <div class="container mb-5 pb-5 swiper mySwiper">
+        <h1 class="text-center fw-bold my-5 py-5">Our Client Feedback</h1>
+        <div class=" swiper-wrapper client-feedback">
+          <!-- Slide  -->
+          
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+    
+
+      <!-- section6 -->
+        <section class="container text-center">
+          <h1 class="fw-bold pt-5 pb-3">Our Trusted Partner</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px; height: 200px; object-fit: cover;" class="client " src="../../assets/img/client-lin.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-lin.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-chhat.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-jit.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-kdey.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-chhat.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-jit.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-kdey.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/client-mongkol.jpg">
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-img-client p-3">
+            <img style="width: 200px;  height: 200px; object-fit: cover;" class="client" src="../../assets/img/cleint-seaklang-and-jit.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- section 7 -->
+    <section class="section7 container-fluid mt-5">
+      <div class="row m-3 pb-5">
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="mb-4">
+            <a class="trionix" href="#">
+              Trionix
+            </a>
+          </div>
+          <div>
+            <p class="text-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div>
+            <a class="text-decoration-none" href="#">
+              <i class="icons bi bi-facebook"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="icons bi bi-twitter"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="icons bi bi-linkedin"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="icons bi bi-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="mb-4">
+            <p class="fs-4 fw-bold">
+              Our Services
+            </p>
+          </div>
+          <div>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              IT Solution
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Web Development
+              </a>
+           </p>
+           <p>
+             <a class="a-tage text-decoration-none" href="#">
+              Digital Marketing
+            </a>
+           </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Cyber Securitys
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Apps Development
+            </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="mb-4">
+            <p class="fs-4 fw-bold">Quick Links</p>
+          </div>
+          <div>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              About Us
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Case Study
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Contact Us
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+              Team Member
+            </a>
+            </p>
+            <p>
+              <a class="a-tage text-decoration-none" href="#">
+                Pricing Plans
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div>
+            <p class="mb-4 fs-4 fw-bold">Contact Information</p>
+          </div>
+          <div>
+            <p>Phone: <a class="a-p-e text-decoration-none" href="#"> +000 313 577 111</a></p>
+            <p>Email: <a class="a-p-e text-decoration-none" href="#">demo@example.com</a></p>
+            <p>Address: 4035 Heavens, Los Angeles, California
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12">
+       <div class="input-container">
+        <input type="text" class="styled_input_bar" placeholder="" />
+        <label class="input-label" for="styled_input_bar">Enter your email</label>
+       </div>
+          </div>
+          <div class="col-12">
+       <button class="button mt-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+        </svg>
+        <div class="text">
+          Submit
+        </div>
+       </button>
+          </div>
+          </div>
+        </div>
+        <div class="line-name col-12 bg-white">
+        </div>
+      </div>
+    </section>
+    <section class="footer container-fluid pb-4 d-flex justify-content-md-around text-center">
+      <div class="row">
+        <div class="footer-text col-lg-6 col-md-6">
+          <p>
+           <i class="bi bi-c-circle"></i> 2022 Trionix - All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 fs-6">
+          <a class="a-tage text-decoration-none" href="#">
+          Terms & Conditions
+        </a>
+        |
+        <a class="a-tage text-decoration-none" href="#">
+          Privacy Policy
+        </a>
+        </div>
+      </div>
+    </section>
+    <script src="../../bootstrapt/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+  <script src="../../src/javascript/theme/themeMood.js"></script>
+  <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="../../src/javascript/script.js"></script>
+  <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

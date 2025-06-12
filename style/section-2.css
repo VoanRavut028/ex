@@ -1,0 +1,54 @@
+.section2 {
+  margin-top: 100px;
+  
+}
+.section2-welcome {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(33, 155, 255);
+}
+.section2-we {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.section2-lorem {
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgb(102, 102, 102);
+}
+.h6-div {
+  color: rgb(33, 155, 255);
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: none;
+  overflow: hidden;
+  height: 4px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4b66ff;
+  transition: width 0.4s ease;
+}
+/* Error */
+.people {
+  width: auto;
+}
+.bnd  {
+  position: relative;
+  color: #78ceff;
+  margin-top: -120px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.h1-12 {
+  font-size: 5rem;
+  margin-bottom: -9px;
+}
+
+

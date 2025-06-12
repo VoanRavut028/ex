@@ -1,0 +1,56 @@
+.container-teams{
+  position: relative;
+  background-color: white;
+}
+.card-header{
+  overflow: hidden;
+}
+
+
+.image-teams{
+  opacity: 1;
+  height: auto;
+  transition: all 0.5s ease;
+  width: 100%;
+  
+}
+
+.middle-teams  {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container-teams:hover .image-teams {
+  opacity: 0.3;
+  transform: scale(1.2);
+}
+
+.container-teams:hover .middle-teams {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ .middle-teams i{
+  background-color: #004a75;
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 100%;
+}
+.h3 {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.text-skill {
+  font-size: 14px;
+  margin-top: -10px;
+  color: #1a86c5;
+  font-weight: 600;
+}
