@@ -14,31 +14,24 @@ p {
   color: black;
 }
 [data-bs-theme="dark"] .background {
-  background-image: url(../../assets/img/image.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 70vh;
-  background-color: transparent;
+  background-image: url("../assets/img/image.png");
 }
 [data-bs-theme="dark"] .sub-background {
   margin-top: 40px;
-  background-image: url(../../assets/img/);
+  background-image: url("../assets/img/image.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
 }
 
 .background {
-  background-image: url(../../assets/img/back.jpg);
+  background-image: url("../assets/img/back.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 70vh;
+  background-attachment: fixed;
 }
-.service-title {
-  font-family: Arial;
-  /* font-weight: bold; */
-  margin-top: 200px;
-}
+
 .home {
   font-family: Arial;
   font-weight: 10px;
@@ -69,7 +62,7 @@ p {
   border-radius: 2px;
   height: 100%;
   max-width: 400px;
-  margin-left: 10px;
+
   transition: all 0.4s ease;
 }
 .custom-card:hover {
@@ -84,9 +77,10 @@ p {
 }
 .sub-background {
   margin-top: 40px;
-  background-image: url(../../assets/img/second-back.jpg);
+  background-image: url("../assets/img/second-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 40vh;
 }
 .button-contact {
@@ -113,9 +107,9 @@ p {
 }
 
 @media (min-width: 992px) {
-  .service-title {
-    margin-top: 100px;
-    font-size: 1rem;
+  .service-title p {
+    font-size: 1rem !important;
+    font-weight: 400;
   }
 
   .custom-card {
@@ -123,8 +117,13 @@ p {
     min-height: 280px;
   }
 }
-
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 991px) {
+  .service-title p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
   .background {
     height: 50vh;
   }
@@ -133,9 +132,10 @@ p {
     height: 30vh;
   }
 
-  .service-title {
-    margin-top: 80px;
-    font-size: 12px;
+  .service-title p {
+    /* margin-top: 80px; */
+    font-size: 16px !important;
+    font-weight: 500;
   }
 
   .img {
@@ -151,13 +151,17 @@ p {
 }
 
 @media (max-width: 576px) {
-  .service-title {
-    font-size: 12px;
+  .service-title h2 {
+    font-size: 14px;
     margin-top: 60px;
+  }
+  .service-title p {
+    font-size: 14px !important;
+    font-weight: 400 !important;
   }
 
   .custom-card {
-    padding: 15px;
+    margin: 10px auto;
     min-height: 250px;
   }
 
@@ -165,45 +169,91 @@ p {
     width: 45px;
     height: 45px;
   }
+  [data-bs-theme="dark"] .background {
+    background-image: url("../assets/img/image.png");
+    height: 40vh;
+  }
 }
 
-/* ============== */
+/* ====Service details === */
 
 .background-service {
-  background-image: url(../assets/img/image.png);
+  background-image: url("../assets/img/image.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding: 60px 15px;
 }
-.home {
-  font-family: Arial;
-  font-weight: 10px;
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-.home:hover {
-  opacity: 0.7;
-  color: blue;
-}
+
 .service-detail-title {
-  font-family: Arial;
   font-weight: bold;
-  margin-top: 200px;
+  font-size: 2.5rem;
 }
-.service-detail-image {
-  width: 900px;
+
+.home {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
 }
+
+.home:hover {
+  color: rgb(27, 59, 173);
+  opacity: 0.8;
+}
+
 .service-detail-area {
-  margin-top: 60px;
-  padding-left: 0 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.service-step-img {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.service-detail-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
 }
+
+.service-step-wrap {
+  color: #666;
+}
+
+.service-title {
+  margin-top: 40px;
+}
+
+.service-title h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .service-detail-title {
+    font-size: 1rem;
+  }
+
+  .background-service {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .service-title h2 {
+    font-size: 1.5rem;
+  }
+  .service-title p {
+    font-size: 0.7rem;
+  }
+
+  .service-step-img {
+    text-align: center;
+  }
+
+  .home {
+    font-size: 0.95rem;
+  }
+}
+
 .service-step-wrap {
   margin-top: 30px;
   color: gray;
@@ -212,7 +262,7 @@ p {
 /* Small to medium screens: tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .service-detail-title {
-    font-size: 28px;
+    font-size: 16px;
     margin-top: 120px;
   }
 }

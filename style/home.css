@@ -147,6 +147,9 @@ html[data-bs-theme="dark"] .experience-badge-plan {
   font-weight: 500;
   opacity: 0.8;
 }
+html[data-bs-theme='dark'] .experience-text-plan{
+  color: white;
+}
 
 /* === Pricing=== */
 html[data-bs-theme="dark"] .pricing-plan {

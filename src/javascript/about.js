@@ -1,4 +1,4 @@
-import { member, client, services, logos } from "./data.js";
+import { clientOnAbout, memberOnAbout, ourTrustPartner } from "./data.js";
 
 slider();
 function slider() {
@@ -71,68 +71,11 @@ function slider() {
     // Slide change callbacks
   });
 }
-logoSlide();
-function logoSlide() {
-  // Initialize Swiper
-  const swiper = new Swiper(".logoSwiper", {
-    // Disable loop
-    loop: true,
 
-    autoplay: {
-      delay: 1, // 2 seconds
-      disableOnInteraction: false, // Continue autoplay after user interaction
-      pauseOnMouseEnter: true, // Pause when hovering
-    },
-
-    // Responsive breakpoints
-    breakpoints: {
-      // Mobile
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      // Tablet
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 1,
-      },
-      // Desktop
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 0,
-      },
-    },
-
-    // Smooth transitions
-    speed: 2000,
-    effect: "slides",
-
-    // Center slides
-    centeredSlides: true,
-
-    // Enable grab cursor
-    grabCursor: true,
-
-    // Keyboard control
-    keyboard: {
-      enabled: true,
-    },
-
-    // Mouse wheel control
-    mousewheel: {
-      enabled: true,
-      forceToAxis: true,
-    },
-
-    // Auto height
-    autoHeight: false,
-  });
-}
-clientFeedBack();
-
-function clientFeedBack() {
+clientFeedBackOnAbout();
+function clientFeedBackOnAbout() {
   let card = ``;
-  client.forEach((value) => {
+  clientOnAbout.forEach((value) => {
     card += `
   <div data-aos="zoom-in-up" class="swiper-slide">
           <div class="card client">
@@ -168,9 +111,9 @@ function clientFeedBack() {
   document.querySelector(".client-feedback").innerHTML = card;
 }
 
-const memberShip = () => {
+function memberShipOnAbout() {
   let card = ``;
-  member.forEach((value) => {
+  memberOnAbout.forEach((value) => {
     card += `
    <div data-aos="zoom-in-up" class="col-lg-3 col-md-6 col-12">
           <div class="team-card">
@@ -194,48 +137,21 @@ const memberShip = () => {
   `;
   });
   document.querySelector(".team-member").innerHTML = card;
-};
-memberShip();
+}
+memberShipOnAbout();
 
-const serviceOption = () => {
-  let card = ``;
-  services.forEach((value) => {
-    card += `
-     <div data-aos="zoom-in-up" class="col-12 col-md-6 col-xl-4 my-2">
-          <div class="demo-container">
-            <div class="card service-card">
-              <div class="service-icon">
-                <i class="${value.icon}"></i>
-              </div>
-              <h3 class="service-title">${value.service}</h3>
-              <p class="service-description">
-                ${value.description}
-              </p>
-              <a class="fs-5" href="">Read more</a>
-            </div>
-          </div>
+function loadTrustpartner() {
+  let c = ``;
+  ourTrustPartner.forEach((items) => {
+    c += `
+      <div data-aos="zoom-in-up" class="col">
+        <div class="logo-img-client p-3">
+          <img alt="${items.img}"  class="client img-fluid" src="${items.img}">
         </div>
+      </div>
     `;
   });
+  document.querySelector(".load-trust-partner").innerHTML = c;
+}
 
-  document.querySelector(".service-option").innerHTML = card;
-};
-serviceOption();
-
-const loadlogo = () => {
-  let card = ``;
-  logos.forEach((value) => {
-    card += `
-    <div class="swiper-slide">
-          <a href="#"><img
-            src="${value.img}"
-            class="img-fluid logo-img"
-            alt="${value.img}" /></a>
-    </div>
-    `;
-  });
-  document.querySelector(".card-logo").innerHTML = card;
-};
-loadlogo();
-
-
+loadTrustpartner();

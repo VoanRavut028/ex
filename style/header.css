@@ -82,22 +82,21 @@ html[data-bs-theme="light"] .offcanvas-body li a {
 }
 .btn-Contact-us::after {
   content: "";
-  z-index: -1;
+  z-index:-1;
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: var(--blue-color);
+  background-color: white;
   left: 0;
   top: 0;
   border-radius: 0px;
   transition: width 0.4s ease;
-  color: white;
 }
 .btn-Contact-us:hover::after {
   width: 100%;
 }
 .btn-Contact-us:hover {
-  color: white;
+  color: black;
 }
 
 .main-drop-down {
