@@ -293,7 +293,7 @@ graph LR
 
 #### Week 6: Advanced Features & Deployment (7.5 hours)
 
-**Day 1 (Monday) - API Integration & Async Operations** | 1.5 hours | [📖 Lesson][api.md](lessons/api.md) | [📝 Homework](modules/2-frontend/homeworks/w6d1-homework.md) | [🧩 Code](https://github.com/KimangKhenng/vue-w5) | [▶️ Video](https://drive.google.com/file/d/13luk4smF518EFys0c4Y1lyxXQF4RYcFO/view?usp=sharing)
+**Day 1 (Monday) - API Integration & Async Operations** | 1.5 hours | [📖 Lesson](lessons/api.md) | [📝 Homework](modules/2-frontend/homeworks/w6d1-homework.md) | [🧩 Code](https://github.com/KimangKhenng/vue-w5) | [▶️ Video](https://drive.google.com/file/d/13luk4smF518EFys0c4Y1lyxXQF4RYcFO/view?usp=sharing)
 - Theory (40 min): Fetch API, axios, async/await, loading states, error handling
 - Practice (50 min): Build app that fetches data from public API (weather, movies, etc.)
 
